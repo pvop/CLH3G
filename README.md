@@ -1,5 +1,5 @@
 # TitleStylist
-Source code for our "CLH3G" paper at EMNLP 2022: [Contrastive Learning enhanced Author-Style Headline Generation.]
+Source code for our "CLH3G" paper at EMNLP 2022: Contrastive Learning enhanced Author-Style Headline Generation.
 
 ## Requirements
 ### Python packages
@@ -18,7 +18,7 @@ You can download original dataset, our processed dataset and trained CLH3G model
 
 
 ## Usage
-1. Download bert-base-chinese from huffingface https://huggingface.co/bert-base-chinese/tree/main, and convert model to this project as:
+1. Download bert-base-chinese from huggingface https://huggingface.co/bert-base-chinese/tree/main, and convert bert model to this project (which is in google driver already) as:
 ```
 python convert_bert_from_huggingface_to_bertpytorch.py
 ```
@@ -26,7 +26,8 @@ python convert_bert_from_huggingface_to_bertpytorch.py
 ```
 python run_clh3g.py --config_path configs/clh3g_train.json --gpu_ranks 0 1 2 3
 ```
-You can use accumulation_steps to achieve max batch sizes on GPU with limit memory.
+note: You can use accumulation_steps to achieve max batch sizes on GPU with limit memory.
+
 3. You can eval CLH3G model with 1 GPU as:
 ```
 python run_clh3g.py --config_path configs/clh3g_train.json --gpu_ranks 0
