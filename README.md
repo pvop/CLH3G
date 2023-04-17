@@ -34,6 +34,6 @@ python run_clh3g.py --config_path configs/clh3g_train.json --gpu_ranks 0
 ```
 4. You can train and eval the headline style of generated headlines as:
 ```
-python run_contra.py --config_path configs/contrajson --gpu_ranks 0
+python run_contra.py --config_path configs/contra.json --gpu_ranks 0
 ```
 
